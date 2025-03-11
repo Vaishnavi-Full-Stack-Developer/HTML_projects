@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        scroll-behavior: smooth;
+        border: 1px solid black;
+        border-collapse: collapse;
+        height: 1200px;
+        width: 100%;
+      }
+      tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+
+        background-color: rgb(243, 228, 191);
+      }
+      td {
+        border-collapse: collapse;
+      }
+      .one{
+        height: 50px;
+        width: 100%;
+      }
+      .two{
+        background-color: rgb(248, 186, 142);
+        height: 500px;
+        width: 100%;
+      }
+      .three{
+        background-color: rgb(191, 240, 222);
+        height: 500px;
+        width: 100%;
+      }
+      .four{
+        background-color: rgb(228, 152, 145);
+        height: 500px;
+        width: 100%;
+      }
+      .five{
+        background-color: rgb(178, 177, 236);
+        height: 500px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- 1st row -->
+      <tr class="one">
+        <th> <a href="#home">HOME</a></th>
+        <th><a href="#About">ABOUT</a></th>
+        <th><a href="#project">PROJECT</a></th>
+        <th><a href="#contact">CONTACT</a></th>
+      </tr>
+      <!-- 2nd row -->
+      <tr>
+        <td class="two" id="Home" colspan="4" >HOME</td>
+      </tr>
+      <!-- 3rd row -->
+      <tr>
+        <td class="three" id="About" colspan="4">ABOUT</td>
+      </tr>
+      <!-- 4th row -->
+      <tr>
+        <td class="four" id="project" colspan="4"> PROJECT
+          
+        </td>
+      </tr>
+      <!-- 5th row -->
+      <tr>
+        <td class="five" id="contact" colspan="4">CONTACT</td>
+      </tr>
+    </table>
+  </body>
+</html>
