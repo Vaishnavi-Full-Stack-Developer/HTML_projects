@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio using HTML</title>
+    <link rel="icon" href="../bird.jpeg" />
+
+    <!-- style -->
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      table {
+        width: 100%;
+        height: 1000px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        scroll-behavior: smooth;
+      }
+
+      .row-one {
+        width: 100%;
+        height: 50px;
+        background-color: #ffb22c;
+      }
+
+      .row-two {
+        width: 100%;
+        height: 200px;
+        background-color: #fff5e4;
+        text-align: center;
+      }
+
+      .row-three {
+        width: 100%;
+        height: 300px;
+        background-color: #fff5e4;
+        text-align: center;
+        border-collapse: collapse;
+      }
+
+      .row-four {
+        width: 100%;
+        height: 800px;
+        background-color: #fff5e4;
+        text-align: center;
+        border-collapse: collapse;
+      }
+
+      .row-five {
+        width: 100%;
+        height: 300px;
+        background-color: #fff5e4;
+        text-align: center;
+        font-size: 15px;
+      }
+
+      /* table-two styling */
+
+      .table-two {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .one {
+        width: 100%;
+        height: 25%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .two {
+        width: 100%;
+        height: 25%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .three {
+        width: 100%;
+        height: 25%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .four {
+        width: 100%;
+        height: 25%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- table one open -->
+    <table>
+      <!-- table row one open -->
+      <tr class="row-one">
+        <th><a href="#home">HOME</a></th>
+        <th><a href="#about">ABOUT</a></th>
+        <th><a href="#project">PROJECTS</a></th>
+        <th><a href="#contact">CONTACT</a></th>
+      </tr>
+      <!-- table row one close -->
+
+      <!-- table row two open -->
+      <tr class="row-two" id="home">
+        <td colspan="4">
+          <h1>I am Vaishnavi R. Kinekar.</h1>
+          <h2>A Full Stack Developer</h2>
+        </td>
+      </tr>
+      <!-- table row two close -->
+
+      <!-- table row three open -->
+      <tr class="row-three" id="about">
+        <td colspan="4">
+          <p>
+            Front-End Web Developer with expertise in HTML, CSS, and JavaScript,
+            creating responsive, accessible, and visually appealing websites.
+            Passionate about crafting pixel-perfect designs and ensuring
+            cross-browser compatibility. Strong understanding of CSS frameworks
+            (Bootstrap, Tailwind CSS) and best practices for UI/UX optimization
+          </p>
+          .
+        </td>
+      </tr>
+      <!-- table row three close -->
+
+      <!-- table row four open -->
+      <tr class="row-four" id="project">
+        <td colspan="4">
+          <!-- TABLE-TWO OPEN-->
+
+          <table class="table-two">
+            <!-- ROW ONE OPEN -->
+
+            <!-- Top Infulencers -->
+            <tr class="one">
+              <td class="tabledata">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/011/743/268/non_2x/influencer-icon-for-graphic-design-logo-website-social-media-mobile-app-ui-illustration-vector.jpg"
+                  alt="Top infulencers"
+                  height="85%"
+                  width="300px"
+                />
+                <br />
+                <a href="./influencer_p.html">Top Infulencers</a>
+              </td>
+
+              <!-- resume -->
+              <td class="tabledata">
+                <img
+                  src="https://t3.ftcdn.net/jpg/03/77/85/04/360_F_377850455_Gk0rRBzegH6YX9SZK9YbgyYyLwrVb9zi.jpg"
+                  alt="resume"
+                  height="85%"
+                  width="300px"
+                />
+                <br />
+                <a href="./resume.html">Resume</a>
+              </td>
+              <!-- Sign up form -->
+              <td class="tabledata">
+                <img
+                  src="https://t3.ftcdn.net/jpg/03/77/85/04/360_F_377850455_Gk0rRBzegH6YX9SZK9YbgyYyLwrVb9zi.jpg"
+                  alt="Sign up form "
+                  height="85%"
+                  width="300px"
+                />
+                <br />
+                <a href="./signup_form_assingment.html">Sign up form </a>
+              </td>
+            </tr>
+            <!-- ROW ONE CLOSE -->
+
+            <!-- ROW two OPEN -->
+            <tr class="two">
+              <!-- Form assingment open -->
+              <!-- Form assingment -->
+              <td class="tabledata">
+                <img
+                  src="https://t3.ftcdn.net/jpg/03/77/85/04/360_F_377850455_Gk0rRBzegH6YX9SZK9YbgyYyLwrVb9zi.jpg"
+                  alt="Form assingment"
+                  height="85%"
+                  width="300px"
+                />
+                <br />
+                <a href="./form_assingment.html">Admission Form </a>
+              </td>
+              <!-- Form assingment close -->
+
+              <!-- CPU components open -->
+
+              <td class="tabledata">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/010/370/620/non_2x/icon-cpu-suitable-for-computer-components-symbol-glyph-style-simple-design-editable-design-template-simple-illustration-vector.jpg"
+                  alt="CPU components"
+                  height="85%"
+                  width="300px"
+                />
+                <br />
+                <a href="./components-of-cpu.html">CPU Components</a>
+              </td>
+              <!-- CPU components -->
+
+              <!-- CPU components open -->
+
+              <td class="tabledata">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/3402/3402248.png"
+                  alt="report-card"
+                  height="85%"
+                  width="300px"
+                />
+                <br />
+                <a href="./tbl-report-card.html">Report-Card </a>
+              </td>
+              <!-- CPU components -->
+            </tr>
+            <!-- ROW two CLOSE -->
+
+            <!-- ROW three OPEN -->
+            <tr class="two">
+              <!-- Youtube page open -->
+              <td class="tabledata">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpXlbYl4Ter30nM_VB3-CdpYDRuWEgfmuFaQ8RGNejgi6uk6qDD1mhLNuw4AbMLeTLx3U&usqp=CAU"
+                  alt="Youtube page"
+                  height="85%"
+                  width="300px"
+                />
+                <br />
+                <a href="./youtube-assingment-page.html">Youtube page </a>
+              </td>
+              <!--Youtube page close -->
+
+              <!-- Layout Practice open -->
+              <td class="tabledata">
+                <img
+                  src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b14e3082362019.5d36984ae294a.png"
+                  alt="Layout Practice "
+                  height="85%"
+                  width="300px"
+                />
+                <br />
+                <a href="./tbl-assingment-two.html">Layout Practice </a>
+              </td>
+              <!-- Layout Practice open -->
+              <!-- calculator open -->
+              <td class="tabledata">
+                <img
+                  src="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png"
+                  alt="calculator "
+                  height="85%"
+                  width="300px"
+                />
+                <br />
+                <a href="./calculator-project.html">Calculator </a>
+              </td>
+              <!-- calculator close -->
+            </tr>
+            <!-- ROW three CLOSE -->
+
+            <!-- ROW four OPEN -->
+            <tr class="two">
+              <td class="tabledata"></td>
+
+              <!-- Layout Practice open -->
+              <td class="tabledata"></td>
+
+              <td class="tabledata"></td>
+              <td class="tabledata"></td>
+            </tr>
+            <!-- ROW four CLOSE -->
+          </table>
+          <!-- TABLE-TWO CLOSE-->
+        </td>
+      </tr>
+      <!-- table row four close -->
+
+      <!-- table row five open -->
+      <tr class="row-five" id="contact">
+        <td colspan="4">
+          <h3>Let's Connect:</h3>
+          <b>Phone:</b><a href="tel:8766079061">8766079061</a><br />
+          <b>Email:</b
+          ><a href="mailto:prachikinekar1214@gmail.com"
+            >prachikinekar1214@gmail.com</a
+          ><br />
+          <b>Location:</b>Katol<br />
+          <b>GitHub:</b
+          ><a href="https://github.com/prachikinekar/HTML_Projects"
+            >Github Profile</a
+          ><br />
+          <b>LinkedIn:</b
+          ><a href="https://www.linkedin.com/in/prachi-kinekar-9b7b06259"
+            >LinkedIn Profile</a
+          ><br />
+          <b>Skype:</b>Available
+        </td>
+      </tr>
+      <!-- table row five close -->
+    </table>
+    <!-- table one close -->
+  </body>
+</html>
