@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form using Grid</title>
+    <link
+      rel="icon"
+      href="https://png.pngtree.com/png-clipart/20191120/original/pngtree-form-icon-isolated-png-image_5045567.jpg"
+    />
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(rgb(166, 166, 237), rgb(108, 106, 190),rgb(20, 20, 47));
+      }
+      .container {
+        width: 90%;
+        height: 90%;
+        /* background-color: chocolate; */
+        margin-left: 70px;
+        margin-top: 60px;
+        background-color: rgb(255, 254, 253);
+      }
+      .one {
+        height: 95%;
+        width: 95%;
+        background-color: rgb(255, 254, 253);
+        margin-left: 30px;
+      }
+      .header {
+        height: 60px;
+        width: 100%;
+      }
+     
+     
+      /* hr{
+        height: 5px;
+        width: 80px;
+       margin-left: 100px;
+       margin-top: 20px;
+       background-color: coral;
+      } */
+      h1 {
+        padding-left: 100px;
+        padding-top: 10px;
+      }
+
+      .body {
+        height: 300px;
+        /* background-color: rgb(255, 222, 207); */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      .body-one {
+        text-align: left;
+        font-size: 20px;
+      }
+      .body-two {
+        text-align: left;
+        font-size: 20px;
+      }
+      input {
+        width: 90%;
+        height: 30px;
+        /* margin-left: 20px; */
+        margin-right: 20px;
+      }
+      .gender {
+        font-size: 20px;
+        height: 200px;
+        width: 80%;
+      }
+      .input-one {
+        height: 20px;
+        width: 40px;
+      }
+      .button{
+        height: 200px;
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+      }
+      button{
+        height: 45px;
+        width: 95%;
+        background: linear-gradient(rgb(166, 166, 237), rgb(61, 56, 213));
+     border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one">
+        <!-- header section open -->
+        <div class="header">
+          <h1><u>Reg</u>istration</h1>
+        </div>
+        <!-- header section close-->
+
+        <!-- body section open -->
+        <div class="body">
+          <!-- Start grid column one -->
+          <div class="body-one">
+            <label for=""> Full Name :</label> <br /><br />
+            <input type="text" placeholder="Enter Your first Name" /> <br />
+            <br />
+            <!-- email id open  -->
+            <label for="">E-mail Id :</label> <br /><br />
+            <input type="mail" placeholder="Enter Your Mail-ID" /> <br />
+            <br />
+            <!-- email id close  -->
+            <!-- passowrd open -->
+            <label for="">Password :</label><br />
+            <br />
+            <input type="text" placeholder="Password" /><br />
+          </div>
+
+          <!-- Start grid column two -->
+          <div class="body-two">
+            <label for="">Contact No :</label> <br /><br />
+            <input type="number" placeholder="Enter your Contact No" /> <br />
+            <br />
+            <!-- contact no close -->
+            <!-- username open -->
+            <label for="">Username :</label> <br />
+            <br />
+            <input type="text" placeholder="Enter your Username" /><br />
+            <br />
+            <!-- username open -->
+            <!-- passowrd open -->
+            <label for="">Confirm Password :</label><br />
+            <br />
+            <input type="text" placeholder="Confirm password" /><br />
+          </div>
+        </div>
+        <!-- body section close-->
+       
+
+        <!-- gender section -->
+        <form action="">
+          <label>Gender</label>
+          <br /><br />
+          <input class="input-one" type="radio" name="gender" value="male" />
+          <label class="label-one">Male</label>
+          <input class="input-one" type="radio" name="gender" value="female" />
+          <label class="label-one">Female</label>
+          <input class="input-one" type="radio" name="gender" value="other" />
+          <label class="label-one">Prefer not to say</label>
+        </form>
+
+        <!-- button start -->
+        <div class="button">
+          <button>Register</button>
+        </div>
+        <!-- button end -->
+      </div>
+    </div>
+  </body>
+</html>
