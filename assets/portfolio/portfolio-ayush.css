@@ -1,0 +1,84 @@
+body {
+    width: 100vw;
+}
+
+.main-container {
+    width: 100%; 
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.logo {
+
+    margin-left: 10%;
+}
+
+.header-links {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+}
+
+/* heme section css */
+.home {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: grey;
+}
+
+.home-left {
+    height: 100%;
+    width: 100%;
+    background-color: coral;
+}
+
+.home-right {
+    height: 100%;
+    width: 100%;
+}
+
+/* about css */
+.about {
+    height: 600px;
+    width: 100%;
+    background-color: darkslategray;
+}
+
+
+/* PROEJCT SECTION CSS */
+.project {
+    width: 100%;
+    height: auto;
+    background-color: cyan;
+
+}
+
+.cards {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.project-one {
+    width: 100%;
+    height: 400px;
+    background-color: darkgrey;
+}
+
+/* contact section css */
+.contact {
+    height: 500px;
+    width: 100%;
+    background-color: lightblue;
+}
