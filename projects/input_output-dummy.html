@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input-Output</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        background-color: #dff2eb;
+      }
+
+      /* container CSS */
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        scroll-behavior: smooth;
+      }
+
+      .header {
+        width: 60%;
+        height: 15%;
+        border-radius: 20px;
+        font-size: 22px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #24b7df;
+        margin-bottom: 50px;
+      }
+
+      /* tab section CSS */
+      .tab {
+        width: 60%;
+        height: 15%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      button {
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #1fbde4;
+        font-size: 18px;
+        color: black;
+      }
+      button:hover {
+        background-color: #fdfac6;
+        color: antiquewhite;
+      }
+
+      /* language section CSS */
+      .language {
+        height: 1500px;
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+      }
+      span {
+        margin-top: 20px;
+        font-size: 40px;
+        padding-top: 1px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .heading {
+        height: 5px;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+      }
+      .java {
+        height: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+      }
+      .input {
+        height: 500px;
+        width: 45%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        border: 1px solid rgb(248, 243, 243);
+      }
+      .output {
+        height: 500px;
+        width: 45%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 1px solid rgb(248, 243, 243);
+      }
+
+      .python {
+        height: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .clang {
+        height: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .javascript {
+        height: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #jsoutput {
+        height: 500px;
+        width: 45%;
+        background-color: grey;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- container open -->
+    <div class="container">
+      <!-- header section open -->
+      <div class="header">
+        <h1>Input/Output in Programming Languages</h1>
+      </div>
+      <!-- header section close -->
+
+      <!-- tab section open -->
+      <div class="tab">
+        <button><a href="#java">JAVA</a></button>
+        <button><a href="#python">Python</a></button>
+        <button><a href="#clang">C-Language</a></button>
+        <button><a href="#javascript">Java Script</a></button>
+      </div>
+      <!-- tab section close -->
+
+      <!-- Language(input and output) section open -->
+      <div class="language">
+        <span id="java">JAVA</span>
+        <span class="heading">
+          <h6>INPUT</h6>
+          <h6>OUTPUT</h6>
+        </span>
+        <!-- java section -->
+        <div class="java">
+          <div class="input">
+            <img
+              src="../asset-one/java-input.png"
+              alt=""
+              height="500px"
+              width="100%"
+            />
+          </div>
+          <div class="output">
+            <img
+              src="../asset-one/java_output.png"
+              alt=""
+              height="500px"
+              width="100%"
+            />
+          </div>
+        </div>
+        <!-- python section -->
+        <span id="python">Python</span>
+        <span class="heading">
+          <h6>INPUT</h6>
+          <h6>OUTPUT</h6></span
+        >
+        <div class="python">
+          <div class="input">
+            <img
+              src="../asset-one/Python-input.png"
+              alt=""
+              height="500px"
+              width="100%"
+            />
+          </div>
+          <div class="output">
+            <img
+              src="../asset-one/Python-output.png"
+              alt=""
+              height="500px"
+              width="100%"
+            />
+          </div>
+        </div>
+        <!-- C_language section -->
+        <span id="clang">C Language</span>
+        <span class="heading">
+          <h6>INPUT</h6>
+          <h6>OUTPUT</h6></span
+        >
+        <div class="clang">
+          <div class="input">
+            <img
+              src="../asset-one/clang-input.png"
+              alt=""
+              height="500px"
+              width="100%"
+            />
+          </div>
+          <div class="output">
+            <img
+              src="../asset-one/clang-output.png"
+              alt=""
+              height="500px"
+              width="100%"
+            />
+          </div>
+        </div>
+        <!-- javascript section -->
+        <span id="javascript">JavaScript </span>
+        <span class="heading">
+          <h6>INPUT</h6>
+          <h6>OUTPUT</h6></span
+        >
+        <div class="javascript">
+          <div class="input">
+            <img
+              src="../asset-one/javascript-input.png"
+              alt=""
+              height="500px"
+              width="100%"
+            />
+          </div>
+          <div class="output" id="jsoutput">
+            <img
+              id="js-output-one"
+              src="../asset-one/js-output1.png"
+              alt=""
+            />
+            <img
+              id="js-output-two"
+              src="../asset-one/js-output2.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Language(input and output) section close -->
+    </div>
+    <!-- container close -->
+  </body>
+</html>

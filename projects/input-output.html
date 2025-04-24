@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+      }
+      /* Container CSS */
+      .container {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+      }
+      /* Header section CSS */
+      header {
+        width: 90%;
+        height: 18%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(45deg, rgb(20, 174, 236), #2d3c45);
+        text-align: center;
+        border-radius: 10px;
+        color: antiquewhite;
+      }
+      .header-text {
+        font-size: 22px;
+      }
+
+      /* TAB button Section Open */
+      .tab {
+        height: 100px;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        text-decoration: none;
+        padding-top: 40px;
+      }
+      button {
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #84cbf8;
+        font-size: 18px;
+        color: black;
+      }
+      button:hover {
+        background-color: #fdfac6;
+
+        transform: translateY(-3px);
+      }
+      a {
+        text-decoration: none;
+        color: #060605;
+      }
+      /* TAB button Section Close */
+
+      /* Content section CSS Open */
+      .content-box {
+        width: 90%;
+        height: 2500px;
+        margin-top: 40px;
+        background-color: beige;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: #63c2fc;
+      }
+
+      /* JAVA Section CSS open*/
+      .java {
+        width: 90%;
+        height: 600px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+      }
+      .javascript {
+        width: 90%;
+        height: 600px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+      }
+      .python {
+        width: 90%;
+        height: 600px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+      }
+      .clang {
+        width: 90%;
+        height: 600px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+      }
+      .title {
+        height: 10%;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        color: rgb(2, 2, 2);
+      }
+      .lang-name {
+        color: black;
+        font-size: 30px;
+      }
+      .main-content {
+        width: 95%;
+        height: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+      }
+      .input {
+        height: 95%;
+        width: 45%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+      }
+      span {
+        height: 15px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+      }
+      .text{
+        padding-left: 20px;
+      }
+      hr {
+        height: -5px;
+        width: 95%;
+        margin-left: 10px;
+        color: #060605;
+        margin-top: 20px;
+      }
+      .output {
+        height: 95%;
+        width: 45%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+      }
+
+      /* Content section CSS Close */
+    </style>
+  </head>
+  <body>
+    <!-- Container Start -->
+    <div class="container">
+      <!-- header Section Open -->
+      <header>
+        <h1>Input/Output in Programming Languages</h1>
+        <p class="header-text">
+          Comparing how different languages handle basic I/O operations
+        </p>
+      </header>
+      <!-- header Section Close -->
+
+      <!-- tab section open -->
+      <div class="tab">
+        <button><a href="#java">JAVA</a></button>
+        <button><a href="#javascript">Java Script</a></button>
+        <button><a href="#clang">C-Language</a></button>
+        <button><a href="#python">Python</a></button>
+     
+       
+      </div>
+      <!-- tab section close -->
+
+      <!-- CONTENT section open -->
+      <div class="content-box">
+        <!-- first language open(java) -->
+        <div class="java" id="java">
+          <div class="title">
+            <span class="lang-name">JAVA</span>
+          </div>
+
+          <div class="main-content">
+            <!-- input for java -->
+            <div class="input">
+              <span style="margin-top: -80px;">INPUT</span>
+              <hr />
+              <p class="text">import java.util.Scanner; <br>
+                class Scratch { <br>
+                    public static void main(String[] args) { <br>
+                
+                                Scanner scanner = new Scanner(System.in); // Create Scanner object for input
+                                //for string <br>
+                                System.out.println("Enter your name: "); <br>
+                                String name = scanner.nextLine(); <br>
+                
+                                //For integers <br>
+                                System.out.println("Enter your age: "); <br>
+                                int age = scanner.nextInt(); <br>
+                
+                                //Double number(decimal number) <br>
+                                  System.out.print("Enter your Score : "); <br>
+                                  double number = scanner.nextDouble(); <br>
+                
+                                // Output <br>
+                                System.out.println("Hello, " + name + "! You are " + age + " years old. You Scored " + number+ " % in your Exams");
+                
+                            }
+                        }</p>
+            </div>
+            <!-- output for java -->
+            <div class="output" id="java-output">
+              <span style="padding-top: 50px"> OUTPUT</span>
+              <hr />
+              <img src="../asset-one/java_output.png" alt="" height="70%"
+              width="90%">
+            </div>
+          </div>
+        </div>
+        <!-- first language close(java) -->
+
+        <!-- Second language open(javascript) -->
+        <div class="javascript" id="javascript">
+          <div class="title">
+            <span class="lang-name">JAVA Script</span>
+          </div>
+
+          <div class="main-content">
+            <!-- input for java script-->
+            <div class="input">
+              <span >INPUT</span>
+              <hr />
+
+              <img src="../asset-one/javascript-input.png" alt="" height="70%"
+              width="95%">
+            </div>
+            <!-- output for java script-->
+            <div class="output" id="java-output">
+              <span style="padding-top: 50px"> OUTPUT</span>
+              <hr />
+              <img
+                id="js-output-one"
+                src="../asset-one/js-output1.png"
+                alt=""
+                height="50%"
+                width="90%"
+              />
+              <img
+                id="js-output-two"
+                src="../asset-one/js-output2.png"
+                alt=""
+                height="50%"
+                width="90%"
+              />
+            </div>
+          </div>
+        </div>
+        <!--second language close(javascript) -->
+
+        <!-- third language open(clang) -->
+        <div class="clang" id="clang">
+          <div class="title">
+            <span class="lang-name">C language</span>
+          </div>
+
+          <div class="main-content">
+            <!-- input for clanguage -->
+            <div class="input">
+              <span style="margin-top: -60px;">INPUT</span>
+              <hr />
+             <p class="text">
+              int main(){ <br>
+                printf("Hello C!");<br>
+                printf("Hello Im Vaishnavi ");<br>
+                 int boxOne =10;<br>
+                 int boxTwo = 30;<br>
+                 // Addition <br>
+                    int sum =boxOne+ boxTwo;<br>
+                     printf("%d\n", sum);<br>
+                    // multiplication<br>
+                    int multi = boxOne* boxTwo;<br>
+                   printf("%d\n", multi);<br>
+                // substraction<br>
+                    int diff = boxOne - boxTwo;<br>
+                    printf("%d\n",diff);<br>
+                    return 0;<br>
+                }<br>
+             </p>
+                
+            </div>
+            <!-- output for  clanguage  -->
+            <div class="output" id="clang-output"> 
+              <span style="margin-top: 55px;"> Output</span><hr>
+              <img src="../asset-one/Python-output.png" alt=""  height="70%"
+              width="90%">
+            </div>
+          </div>
+        </div>
+        <!-- third language close(clang) -->
+
+        <!-- fourth language open(python) -->
+
+        <div class="python">
+          <div class="title">
+            <span class="lang-name" id="python">Python</span>
+          </div>
+
+          <div class="main-content">
+            <!-- input for python -->
+            <div class="input">
+              <span style="margin-top: -280px">INPUT</span>
+              <hr />
+              <p class="text">
+                # Basic Input/Output in Python <br />
+              # For string name = input("Enter your name: ") <br />
+              print(f"Hello, {name}!") <br />
+              # For interger <br />
+              age = int(input("Enter your age: "))
+              <br />
+              print(f"You are {age} years old.") <br />
+              </p>
+            </div>
+            <!-- output for python -->
+            <div class="output" id="java-output">
+              <span style="padding-top: 35px"> Output</span>
+              <hr />
+              <img
+                src="../asset-one/Python-output.png"
+                alt=""
+                height="80%"
+                width="90%"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- fourth language close(python) -->
+      </div>
+      <!-- CONTENT section close -->
+    </div>
+    <!-- Container Close -->
+  </body>
+</html>
