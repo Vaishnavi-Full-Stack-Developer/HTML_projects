@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playpen Sans", cursive;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* main-container CSS */
+.main-container {
+  width: 100vw;
+  height: auto;
+}
+
+/* NAVBAR section CSS */
+nav {
+  height: 12vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar {
+  margin-left: 5%;
+  height: 8vh;
+  width: 90%;
+  box-shadow: 0 10 20px rgb(251, 255, 255);
+  border-radius: 2.2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+/* nav-left section CSS */
+.nav-left {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin-right: 25%;
+}
+
+/* nav-middle section CSS */
+.nav-middle {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-items {
+  text-decoration: none;
+  color: rgb(47, 186, 241);
+  transition: all 0.3s ease;
+}
+
+.nav-items:hover {
+  color: rgb(1, 1, 1);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* nav-right section CSS */
+.nav-right {
+  width: 25%;
+  height: 90%;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.contact-items {
+  margin-left: 5vh;
+  color: rgb(47, 186, 241);
+
+  text-decoration: none;
+}
+
+.contact-items:hover {
+  color: black;
+  font-size: 1.4rem;
+}
+
+/* HOME section CSS */
+.home {
+  width: 100%;
+  height: 88vh;
+  background-color: #393e46;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 15vh;
+}
+
+.home-left {
+  width: 40%;
+  height: 100%;
+  margin-top: 25%;
+  padding-right: -5%;
+  color: white;
+}
+
+.resume-btn {
+  height: 10vh;
+  width: 20vw;
+  background-color: teal;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.name {
+  font-size: 40px;
+  color: rgb(87, 199, 244);
+}
+
+.home-right {
+  width: 40%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+/* ABOUT section CSS */
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #393e46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-one {
+
+  height: 20%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  /* border: 1px solid black; */
+}
+
+.abt {
+  font-size: 3rem;
+}
+
+.about-two {
+  margin-top: 5%;
+  height: 80%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.one {
+  height: 400px;
+  width: 30%;
+  background: rgb(255, 255, 255);
+  color: #000000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.one:hover {
+  height: 410px;
+  width: 32%;
+  background-color: rgb(144, 213, 238);
+  transform: translateX(0 px);
+}
+
+.detail {
+  font-size: 1.5rem;
+}
+
+/* PROJECT section CSS */
+.project {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #393e46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-one {
+  height: 30%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.p-two {
+  height: 70%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+.project-card {
+  height: 350px;
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.project-card h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+
+  color: black;
+}
+
+/* CONTACT section CSS */
+.contact {
+  width: 100%;
+  height: 88vh;
+  background-color: #393e46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-one {
+  height: 20%;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.contact-two {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cont-1 {
+  width: 30%;
+  height: 80%;
+  box-shadow: 0 4px 20px rgba(243, 243, 243, 0.1);
+  padding-left: 5%;
+}
+
+.contact-card {
+  height: 350px;
+  width: 30%;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.cont-2 {
+  width: 50%;
+  height: 80%;
+}
+
+.contact-footer {
+  height: 20%;
+  width: 100%;
+  background-color: rgb(255, 245, 245);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
